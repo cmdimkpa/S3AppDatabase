@@ -24,3 +24,14 @@ sudo service redis-server start
 ```
 
 ### 4. Run the Database Services
+
+You will need to use a `runner`, and I recommend `Forever`.
+
+From the project root, run the following commands:
+
+```
+sudo npm install -g forever
+sudo forever start -c node redis-worker.js
+sudo forever start -c node s3appdb.js
+```
+
