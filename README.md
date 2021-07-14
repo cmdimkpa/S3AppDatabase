@@ -7,8 +7,20 @@ A free, no-frills NoSQL datastore. Store your data in S3, compute from anywhere 
 
 ### 1. Clone this project
 
+Clone this project to a suitable directory on your local server.
+
 ### 2. Configure your S3 Bucket
 
+Edit the file `s3config.json` with the required information for your target S3 bucket (this is where your database objects will be stored).
+ - You can ignore the `iostreamer` setting, but ensure you provide the rest.
+
 ### 3. Install Redis on your local server
+
+Download and install Redis on your local Server. Assuming Ubuntu (please adjust for other Linux distros as required):
+```
+sudo apt update
+sudo apt-get install redis-server
+sudo service redis-server start
+```
 
 ### 4. Run the Database Services
