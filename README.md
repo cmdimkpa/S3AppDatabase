@@ -34,4 +34,4 @@ sudo npm install -g forever
 sudo forever start -c node redis-worker.js
 sudo forever start -c node s3appdb.js
 ```
-
+### 5. Review the API Documentation
